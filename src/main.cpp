@@ -91,10 +91,10 @@ void setup() {
 
 void led_logic() {
   if(is_calibrating) {
-    digitalWrite(LED_PIN, ((CALIBRATION_BLINK_FREQUENCY * millis()/1000) % 2)? HIGH:LOW);    // LED off
+    digitalWrite(LED_PIN, ((CALIBRATION_BLINK_FREQUENCY * millis()/1000) % 2)? HIGH:LOW);
   }
   else {
-    digitalWrite(LED_PIN, is_pointing_north? HIGH : LOW);    // LED off
+    digitalWrite(LED_PIN, is_pointing_north? HIGH : LOW);
   }
 }
 
